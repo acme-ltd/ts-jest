@@ -723,7 +723,8 @@ export class ConfigSet {
     // force the module kind if not piping babel-jest
     if (!this.tsJest.babelConfig) {
       // commonjs is required for jest
-      options.module = this.compilerModule.ModuleKind.CommonJS
+      // Enable ESNext Modules
+      // options.module = this.compilerModule.ModuleKind.CommonJS
     }
 
     return options
